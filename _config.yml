@@ -1,0 +1,13 @@
+title: ADVC 2026
+description: 1st Workshop on Agile Development and Verification for Chips at MICRO 2026
+url: "https://workshop.xiangshan.cc"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+
+# GitHub Pages builds this site directly from the selected branch.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

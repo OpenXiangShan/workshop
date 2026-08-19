@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.data.workshop.acronym }} home">
+      <span class="wordmark-mark" aria-hidden="true">O</span>
+      <span class="wordmark-copy">
+        <strong>{{ site.data.workshop.acronym }}</strong>
+        <small>{{ site.data.workshop.conference }}</small>
+      </span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/cfp/' | relative_url }}"{% if page.url == '/cfp/' %} aria-current="page"{% endif %}>Call for Papers</a>
+      <a href="{{ '/program/' | relative_url }}"{% if page.url == '/program/' %} aria-current="page"{% endif %}>Program</a>
+      <a href="{{ '/organizers/' | relative_url }}"{% if page.url == '/organizers/' %} aria-current="page"{% endif %}>Organizers</a>
+    </nav>
+  </div>
+</header>
