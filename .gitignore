@@ -1,0 +1,14 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler local state
+.bundle/
+vendor/bundle/
+
+# Local dependency/build output
+Gemfile.lock
+node_modules/
+dist/
