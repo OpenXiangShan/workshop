@@ -18,24 +18,16 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
         <a class="text-link" href="#about">Explore the workshop <span aria-hidden="true">↓</span></a>
       </div>
     </div>
-    <div class="hero-index" aria-hidden="true">
-      <span>01</span>
-      <span>AGILE</span>
-      <span>VERIFY</span>
-      <span>CHIPS</span>
-    </div>
   </div>
   <dl class="event-strip" aria-label="Workshop information">
     <div><dt>Date</dt><dd>{{ workshop.date }}</dd></div>
     <div><dt>Location</dt><dd>{{ workshop.location }}</dd></div>
-    <div><dt>Format</dt><dd>{{ workshop.duration }} · {{ workshop.expected_attendance }}</dd></div>
     <div><dt>Presented at</dt><dd><a href="{{ workshop.micro_workshops_url }}" target="_blank" rel="noreferrer">{{ workshop.conference }} <span aria-hidden="true">↗</span></a></dd></div>
   </dl>
 </section>
 
 <section class="section about" id="about">
   <div class="section-heading">
-    <p class="section-kicker">01 / About</p>
     <h2>Chip design is changing.<br>Verification must keep up.</h2>
   </div>
   <div class="reading-width lead-copy">
@@ -47,50 +39,10 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
   </div>
 </section>
 
-<section class="section topics" id="topics">
-  <div class="section-heading">
-    <p class="section-kicker">02 / Topics</p>
-    <h2>Methods for building<br>and proving better chips.</h2>
-  </div>
-  <div class="topic-list">
-    {% for topic in workshop.topics %}
-      <article>
-        <span class="topic-number">0{{ forloop.index }}</span>
-        <h3>{{ topic.title }}</h3>
-        <p>{{ topic.description }}</p>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="section invitation">
-  <p class="section-kicker">Join the conversation</p>
-  <div>
-    <h2>Bring your paper,<br>experience, and perspective.</h2>
-    <p>We welcome papers and presentations from academia and industry, including formal verification, fuzzing, and emerging AI-driven approaches.</p>
-    <a class="button button-dark" href="#cfp">Read the Call for Papers <span aria-hidden="true">↓</span></a>
-  </div>
-</section>
-
-<section class="section dates" id="cfp">
+<section class="section submission" id="cfp">
   <div class="content-grid">
     <div>
-      <p class="section-kicker">03 / Participate</p>
-      <h2>Key dates</h2>
-    </div>
-    <div class="dates-table">
-      <div><span>Submission deadline</span><strong>To be announced</strong></div>
-      <div><span>Notification</span><strong>To be announced</strong></div>
-      <div><span>Workshop</span><strong>{{ workshop.date }} · {{ workshop.duration }}</strong></div>
-    </div>
-  </div>
-</section>
-
-<section class="section submission">
-  <div class="content-grid">
-    <div>
-      <p class="section-kicker">Paper submission</p>
-      <h2>How to submit</h2>
+      <h2>Call for Papers</h2>
     </div>
     <div>
       <p>We invite papers on agile development and verification for chips. Submissions may present mature research, work in progress, industrial experience, or new directions for the community.</p>
@@ -100,56 +52,45 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
         {% endfor %}
       </ul>
       <p class="notice">Submission portal, paper length, and formatting requirements will be announced when the call opens.</p>
-      <a class="button" href="mailto:{{ workshop.contact_email }}?subject=ADVC%202026%20paper">Contact the organizers</a>
+      <a class="button" href="{{ workshop.submission_link }}">Submit</a>
     </div>
   </div>
 </section>
 
-<section class="section program" id="program">
-  <p class="section-kicker">04 / Attend</p>
-  <h2>Program</h2>
-  <p class="program-lead">The detailed agenda and invited speakers will be announced closer to the workshop. Invited talks are currently TBD.</p>
-  <div class="program-table">
-    <div><strong>Opening remarks</strong><span>Workshop overview and community discussion</span></div>
-    <div><strong>Invited talks</strong><span>Perspectives from academia and industry (TBD)</span></div>
-    <div><strong>Paper presentations</strong><span>Peer-reviewed work on agile chip development and verification</span></div>
-    <div><strong>Discussion</strong><span>Challenges and opportunities for reliable, efficient chip verification</span></div>
+<section class="section dates">
+  <div class="content-grid">
+    <div>
+      <h2>Important dates</h2>
+    </div>
+    <div class="dates-table">
+      <div><span>Submission deadline</span><strong>{{ workshop.submission_deadline }}</strong></div>
+      <div><span>Notification</span><strong>{{ workshop.notification_date }}</strong></div>
+      <div><span>Workshop</span><strong>{{ workshop.date }} · {{ workshop.duration }}</strong></div>
+    </div>
   </div>
 </section>
 
+{% if workshop.show_program %}
+  <section class="section program" id="program">
+    <h2>Program</h2>
+    <div class="program-table">
+      <div><strong>Opening remarks</strong><span>Workshop overview and community discussion</span></div>
+      <div><strong>Invited talks</strong><span>Perspectives from academia and industry (TBD)</span></div>
+      <div><strong>Paper presentations</strong><span>Peer-reviewed work on agile chip development and verification</span></div>
+      <div><strong>Discussion</strong><span>Challenges and opportunities for reliable, efficient chip verification</span></div>
+    </div>
+  </section>
+{% endif %}
+
 <section class="section organizers" id="organizers">
-  <p class="section-kicker">05 / People</p>
-  <h2>Organizing Team</h2>
+  <h2>Organizers</h2>
   <div class="organizer-list">
     {% for organizer in workshop.organizers %}
       <article>
-        <h3>{{ organizer.name }}</h3>
+        <h3><a href="{{ organizer.homepage }}" target="_blank" rel="noreferrer">{{ organizer.name }}</a></h3>
+        <p class="organizer-title">{{ organizer.title }}</p>
         <p>{{ organizer.affiliation }}</p>
       </article>
     {% endfor %}
-  </div>
-</section>
-
-<section class="section inclusion">
-  <div class="content-grid">
-    <div>
-      <p class="section-kicker">Diversity and inclusion</p>
-      <h2>Many disciplines,<br>one conversation.</h2>
-    </div>
-    <div>
-      <p>ADVC welcomes participation from both academia and industry. Invited speakers will include experts from both communities, with attention to diversity in gender and racial backgrounds.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section invited">
-  <div class="content-grid">
-    <div>
-      <p class="section-kicker">Invited talks</p>
-      <h2>Perspectives from<br>the field.</h2>
-    </div>
-    <div>
-      <p>Invited speakers will be announced in the program. Current status: TBD.</p>
-    </div>
   </div>
 </section>

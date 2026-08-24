@@ -4,17 +4,24 @@ conference: MICRO 2026
 conference_name: 59th IEEE/ACM International Symposium on Microarchitecture
 date: October 31, 2026
 conference_dates: October 31 - November 4, 2026
+submission_deadline: To be announced
+notification_date: To be announced
 location: Athens, Greece
-duration: Half day
+duration: 8:00 AM - 12:00 PM
 expected_attendance: 20-60 participants
-contact_email: advc@micro-workshop.org
+submission_link: "mailto:advc@micro-workshop.org?subject=ADVC%202026%20paper"
+show_program: false
 micro_workshops_url: https://www.microarch.org/micro59/program/workshops-new.php
 
 organizers:
   - name: Yungang Bao
-    affiliation: Processor, Institute of Computing Technology, Chinese Academy of Sciences
+    title: Professor
+    affiliation: ICT, CAS
+    homepage: https://acs.ict.ac.cn/baoyg/
   - name: Trevor E. Carlson
-    affiliation: Associate Processor, National University of Singapore
+    title: Associate Professor
+    affiliation: National University of Singapore
+    homepage: https://www.comp.nus.edu.sg/~tcarlson/
 
 topics:
   - title: Agile chip development

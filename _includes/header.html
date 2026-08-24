@@ -10,7 +10,9 @@
     <nav aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#cfp">Call for Papers</a>
+      {% if site.data.workshop.show_program %}
       <a href="#program">Program</a>
+      {% endif %}
       <a href="#organizers">Organizers</a>
     </nav>
   </div>
