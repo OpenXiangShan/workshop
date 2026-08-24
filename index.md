@@ -14,7 +14,7 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
       <p class="hero-title">{{ workshop.title }}</p>
       <p class="hero-summary">A focused forum on agile chip development, rigorous verification, and the tools that make both possible.</p>
       <div class="hero-actions">
-        <a class="button button-accent" href="{{ '/cfp/' | relative_url }}">View the call for papers <span aria-hidden="true">↗</span></a>
+        <a class="button button-accent" href="#cfp">View the call for papers <span aria-hidden="true">↓</span></a>
         <a class="text-link" href="#about">Explore the workshop <span aria-hidden="true">↓</span></a>
       </div>
     </div>
@@ -47,26 +47,9 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
   </div>
 </section>
 
-<section class="section history">
+<section class="section topics" id="topics">
   <div class="section-heading">
-    <p class="section-kicker">02 / Community</p>
-    <h2>A growing practice<br>behind the workshop.</h2>
-  </div>
-  <div class="reading-width lead-copy">
-    <p class="lede">A new workshop, grounded in an active community.</p>
-    <p>This particular workshop has not been held before. The organizers have previously led multiple XiangShan tutorials:</p>
-    <ul>
-      {% for workshop_event in workshop.previous_workshops %}
-        <li>{{ workshop_event }}</li>
-      {% endfor %}
-    </ul>
-    <p>Expected attendance: {{ workshop.expected_attendance }}. The workshop welcomes participants from both academia and industry.</p>
-  </div>
-</section>
-
-<section class="section topics">
-  <div class="section-heading">
-    <p class="section-kicker">03 / Topics</p>
+    <p class="section-kicker">02 / Topics</p>
     <h2>Methods for building<br>and proving better chips.</h2>
   </div>
   <div class="topic-list">
@@ -85,6 +68,88 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
   <div>
     <h2>Bring your paper,<br>experience, and perspective.</h2>
     <p>We welcome papers and presentations from academia and industry, including formal verification, fuzzing, and emerging AI-driven approaches.</p>
-    <a class="button button-dark" href="{{ '/cfp/' | relative_url }}">Read the Call for Papers <span aria-hidden="true">→</span></a>
+    <a class="button button-dark" href="#cfp">Read the Call for Papers <span aria-hidden="true">↓</span></a>
+  </div>
+</section>
+
+<section class="section dates" id="cfp">
+  <div class="content-grid">
+    <div>
+      <p class="section-kicker">03 / Participate</p>
+      <h2>Key dates</h2>
+    </div>
+    <div class="dates-table">
+      <div><span>Submission deadline</span><strong>To be announced</strong></div>
+      <div><span>Notification</span><strong>To be announced</strong></div>
+      <div><span>Workshop</span><strong>{{ workshop.date }} · {{ workshop.duration }}</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="section submission">
+  <div class="content-grid">
+    <div>
+      <p class="section-kicker">Paper submission</p>
+      <h2>How to submit</h2>
+    </div>
+    <div>
+      <p>We invite papers on agile development and verification for chips. Submissions may present mature research, work in progress, industrial experience, or new directions for the community.</p>
+      <ul>
+        {% for type in workshop.contribution_types %}
+          <li>{{ type }}</li>
+        {% endfor %}
+      </ul>
+      <p class="notice">Submission portal, paper length, and formatting requirements will be announced when the call opens.</p>
+      <a class="button" href="mailto:{{ workshop.contact_email }}?subject=ADVC%202026%20paper">Contact the organizers</a>
+    </div>
+  </div>
+</section>
+
+<section class="section program" id="program">
+  <p class="section-kicker">04 / Attend</p>
+  <h2>Program</h2>
+  <p class="program-lead">The detailed agenda and invited speakers will be announced closer to the workshop. Invited talks are currently TBD.</p>
+  <div class="program-table">
+    <div><strong>Opening remarks</strong><span>Workshop overview and community discussion</span></div>
+    <div><strong>Invited talks</strong><span>Perspectives from academia and industry (TBD)</span></div>
+    <div><strong>Paper presentations</strong><span>Peer-reviewed work on agile chip development and verification</span></div>
+    <div><strong>Discussion</strong><span>Challenges and opportunities for reliable, efficient chip verification</span></div>
+  </div>
+</section>
+
+<section class="section organizers" id="organizers">
+  <p class="section-kicker">05 / People</p>
+  <h2>Organizing Team</h2>
+  <div class="organizer-list">
+    {% for organizer in workshop.organizers %}
+      <article>
+        <h3>{{ organizer.name }}</h3>
+        <p>{{ organizer.affiliation }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section inclusion">
+  <div class="content-grid">
+    <div>
+      <p class="section-kicker">Diversity and inclusion</p>
+      <h2>Many disciplines,<br>one conversation.</h2>
+    </div>
+    <div>
+      <p>ADVC welcomes participation from both academia and industry. Invited speakers will include experts from both communities, with attention to diversity in gender and racial backgrounds.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section invited">
+  <div class="content-grid">
+    <div>
+      <p class="section-kicker">Invited talks</p>
+      <h2>Perspectives from<br>the field.</h2>
+    </div>
+    <div>
+      <p>Invited speakers will be announced in the program. Current status: TBD.</p>
+    </div>
   </div>
 </section>
