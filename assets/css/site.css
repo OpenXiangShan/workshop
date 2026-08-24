@@ -11,6 +11,8 @@
   --dark-line: #3b453d;
   --max-width: 1180px;
   --page-gutter: max(28px, calc((100vw - var(--max-width)) / 2));
+  --font-sans: "IBM Plex Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -25,7 +27,7 @@ body {
   margin: 0;
   color: var(--ink-soft);
   background: var(--paper);
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.7;
 }
@@ -94,7 +96,7 @@ button:focus-visible {
   display: grid;
   place-items: center;
   border: 2px solid var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 21px;
   line-height: 1;
 }
@@ -223,7 +225,7 @@ h3 {
 
 h1,
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
 }
 
@@ -404,7 +406,7 @@ dd {
 .lead-copy .lede {
   margin-bottom: 28px;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 28px;
   line-height: 1.35;
 }
@@ -478,7 +480,7 @@ dd {
 .submission .content-grid > div:last-child > p:first-child {
   margin-top: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 23px;
   line-height: 1.45;
 }
@@ -570,7 +572,7 @@ li::before {
 
 .organizer-list h3 {
   margin: 0 0 10px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 26px;
   font-weight: 400;
 }
@@ -613,7 +615,7 @@ li::before {
 
 .footer-brand strong {
   color: var(--green);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 27px;
   font-weight: 400;
 }
