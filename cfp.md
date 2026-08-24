@@ -14,8 +14,8 @@ description: Submission information and important dates for ADVC 2026.
 
 <section class="section about">
   <div class="section-heading">
-    <p class="section-kicker">Overview</p>
-    <h2>Build faster.<br>Verify with rigor.</h2>
+    <p class="section-kicker">01</p>
+    <h2>Overview</h2>
   </div>
   <div class="reading-width lead-copy">
     <p class="lede">Agile development and verification for the next generation of chips.</p>
@@ -27,8 +27,8 @@ description: Submission information and important dates for ADVC 2026.
 <section class="section dates">
   <div class="content-grid">
     <div>
-      <p class="section-kicker">Important dates</p>
-      <h2>Key dates</h2>
+      <p class="section-kicker">02</p>
+      <h2>Important Dates</h2>
     </div>
     <div class="dates-table">
       <div><span>Submission deadline</span><strong>To be announced</strong></div>
@@ -41,8 +41,8 @@ description: Submission information and important dates for ADVC 2026.
 <section class="section submission">
   <div class="content-grid">
     <div>
-      <p class="section-kicker">Topics of interest</p>
-      <h2>Methods, tools,<br>and evidence.</h2>
+      <p class="section-kicker">03</p>
+      <h2>Topics of Interest</h2>
     </div>
     <div>
       <p>We invite papers on agile development and verification for chips. Submissions may present mature research, work in progress, industrial experience, or new directions for the community.</p>
@@ -74,8 +74,8 @@ description: Submission information and important dates for ADVC 2026.
 <section class="section">
   <div class="content-grid">
     <div>
-      <p class="section-kicker">Paper submission</p>
-      <h2>Bring your work<br>to the discussion.</h2>
+      <p class="section-kicker">04</p>
+      <h2>Paper Submission</h2>
     </div>
     <div>
       <p>Submissions may present a research result, a position or systems paper, an industrial experience report, or a demonstration of a verification tool, infrastructure, or open-source project.</p>
