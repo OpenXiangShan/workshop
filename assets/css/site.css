@@ -510,6 +510,10 @@ main > .section + .section {
   margin-top: 0;
 }
 
+.cfp-subsection:first-child > ul > li:last-child {
+  border-bottom: 0;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
@@ -541,8 +545,10 @@ li::before {
 }
 
 .submission .button {
-  color: var(--white);
-  background: var(--ink);
+  min-width: 156px;
+  padding: 13px 30px;
+  color: var(--ink);
+  background: var(--green);
 }
 
 .submission .button:hover {
