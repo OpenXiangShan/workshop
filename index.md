@@ -44,15 +44,52 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
     <div>
       <h2>Call for Papers</h2>
     </div>
-    <div>
-      <p>We invite papers on agile development and verification for chips. Submissions may present mature research, work in progress, industrial experience, or new directions for the community.</p>
-      <ul>
-        {% for type in workshop.contribution_types %}
-          <li>{{ type }}</li>
-        {% endfor %}
-      </ul>
-      <p class="notice">Submission portal, paper length, and formatting requirements will be announced when the call opens.</p>
-      <a class="button" href="{{ workshop.submission_link }}">Submit</a>
+    <div class="cfp-content">
+      <section class="cfp-subsection" aria-labelledby="topics-of-interest">
+        <h3 id="topics-of-interest">Topics of Interest</h3>
+        <p>We invite papers on agile development and verification for chips. Submissions may present mature research, work in progress, industrial experience, or new directions for the community.</p>
+        <ul>
+          <li>Agile chip development and verification methods demonstrated using XiangShan, XS-GEM5, or XSAI, including reusable tools, workflows, infrastructure, and experience from practice</li>
+          <li>Rapid design-space exploration and rigorous verification for XiangShan, including
+            <ul>
+              <li>Agile microarchitectural exploration and PPA (power, performance, and area) optimization</li>
+              <li>Rapid compiler-hardware co-design and optimization</li>
+              <li>Automated architectural security analysis and verification</li>
+              <li>Scalable and efficient verification methodologies</li>
+              <li>Efficient cross-level validation and calibration between XiangShan and XS-GEM5</li>
+            </ul>
+          </li>
+          <li>Agile hardware development tools, infrastructure, or workflows for
+            <ul>
+              <li>Functional and performance verification</li>
+              <li>Rapid performance exploration and evaluation</li>
+              <li>Adoption of AI and AI agents in hardware development</li>
+              <li>Acceleration of RTL simulation</li>
+              <li>AI-native hardware programming languages</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cfp-subsection" aria-labelledby="paper-submission">
+        <h3 id="paper-submission">Paper Submission</h3>
+        <p>Submissions may present a research result, a position or systems paper, an industrial experience report, or a demonstration of a verification tool, infrastructure, or open-source project.</p>
+        <ul>
+          {% for type in workshop.contribution_types %}
+            <li>{{ type }}</li>
+          {% endfor %}
+        </ul>
+        <p>We welcome the following forms of contribution:</p>
+        <ul>
+          <li><strong>Research papers:</strong> completed research with a clear problem, method, experimental evaluation, and conclusions.</li>
+          <li><strong>Position papers:</strong> perspectives on agile development or verification, including challenges, roadmaps, and open questions.</li>
+          <li><strong>Systems papers:</strong> working toolchains, platforms, infrastructure, or end-to-end systems, supported by evidence from use or evaluation.</li>
+          <li><strong>Industrial experience reports:</strong> workflows, scale, metrics, lessons learned, failures, and transferable insights from real projects.</li>
+          <li><strong>Demonstrations:</strong> live presentations of tools, infrastructure, or open-source projects, describing the demonstration, its dependencies, and availability.</li>
+        </ul>
+        <p class="notice">Submission portal, paper length, and formatting requirements will be announced when the call opens.</p>
+        <a class="button" href="{{ workshop.submission_link }}">Submit</a>
+      </section>
     </div>
   </div>
 </section>

@@ -494,6 +494,27 @@ main > .section + .section {
   line-height: 1.45;
 }
 
+.cfp-subsection + .cfp-subsection {
+  margin-top: 50px;
+  padding-top: 44px;
+  border-top: 3px solid var(--ink);
+}
+
+.cfp-subsection h3 {
+  margin-bottom: 22px;
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.cfp-subsection > p:first-of-type {
+  margin-top: 0;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 23px;
+  line-height: 1.45;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
