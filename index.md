@@ -49,14 +49,13 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
         <h3 id="topics-of-interest">Topics of Interest</h3>
         <p>We invite papers on agile development and verification for chips. Submissions may present mature research, work in progress, industrial experience, or new directions for the community.</p>
         <ul>
-          <li>Agile chip development and verification methods demonstrated using XiangShan, XS-GEM5, or XSAI, including reusable tools, workflows, infrastructure, and experience from practice</li>
-          <li>Rapid design-space exploration and rigorous verification for XiangShan, including
+          <li>Agile chip development and verification methods, including reusable tools, infrastructure, and experience from practice</li>
+          <li>Rapid design-space exploration and rigorous verification, including
             <ul>
-              <li>Agile microarchitectural exploration and PPA (power, performance, and area) optimization</li>
+              <li>Agile microarchitectural exploration and PPA optimization</li>
               <li>Rapid compiler-hardware co-design and optimization</li>
               <li>Automated architectural security analysis and verification</li>
               <li>Scalable and efficient verification methodologies</li>
-              <li>Efficient cross-level validation and calibration between XiangShan and XS-GEM5</li>
             </ul>
           </li>
           <li>Agile hardware development tools, infrastructure, or workflows for
@@ -74,11 +73,6 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
       <section class="cfp-subsection" aria-labelledby="paper-submission">
         <h3 id="paper-submission">Paper Submission</h3>
         <p>Submissions may present a research result, a position or systems paper, an industrial experience report, or a demonstration of a verification tool, infrastructure, or open-source project.</p>
-        <ul>
-          {% for type in workshop.contribution_types %}
-            <li>{{ type }}</li>
-          {% endfor %}
-        </ul>
         <p>We welcome the following forms of contribution:</p>
         <ul>
           <li><strong>Research papers:</strong> completed research with a clear problem, method, experimental evaluation, and conclusions.</li>
