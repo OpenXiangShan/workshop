@@ -366,14 +366,27 @@ dd {
 }
 
 .section {
-  padding-top: 96px;
-  padding-bottom: 100px;
-  border-top: 1px solid var(--line);
+  padding-top: 0;
+  padding-bottom: 0;
+  background: var(--paper);
+}
+
+main > .section + .section {
+  margin-top: 56px;
 }
 
 .section h2 {
   margin: 0;
   font-size: 49px;
+}
+
+.section h2::before {
+  width: 42px;
+  height: 3px;
+  margin: 0 0 22px;
+  display: block;
+  background: var(--orange);
+  content: "";
 }
 
 .section-heading {
@@ -473,10 +486,6 @@ dd {
   color: var(--ink);
 }
 
-.submission {
-  background: var(--white);
-}
-
 .submission .content-grid > div:last-child > p:first-child {
   margin-top: 0;
   color: var(--ink);
@@ -524,10 +533,6 @@ li::before {
   background: var(--orange);
 }
 
-.program {
-  background: var(--paper);
-}
-
 .program-lead {
   max-width: 680px;
   margin: -8px 0 40px;
@@ -540,10 +545,6 @@ li::before {
 
 .program-table div {
   grid-template-columns: minmax(190px, 0.65fr) minmax(280px, 1.35fr);
-}
-
-.organizers {
-  background: var(--white);
 }
 
 .organizer-list {
@@ -763,13 +764,12 @@ li::before {
     font-size: 12px;
   }
 
-  .section {
-    padding-top: 68px;
-    padding-bottom: 72px;
-  }
-
   .section h2 {
     font-size: 37px;
+  }
+
+  main > .section + .section {
+    margin-top: 40px;
   }
 
   .about,
