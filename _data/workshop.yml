@@ -4,8 +4,8 @@ conference: MICRO 2026
 conference_name: 59th IEEE/ACM International Symposium on Microarchitecture
 date: October 31, 2026
 conference_dates: October 31 - November 4, 2026
-submission_deadline: To be announced
-notification_date: To be announced
+submission_deadline: September 21, 226
+notification_date: September 28, 2026 (before early registration)
 location: Athens, Greece
 duration: 8:00 AM - 12:00 PM
 expected_attendance: 20-60 participants
@@ -35,11 +35,6 @@ contribution_types:
   - Research papers on agile chip development and verification
   - Position papers, systems papers, and industrial experience reports
   - Demonstrations of verification tools, infrastructure, or open-source projects
-
-previous_workshops:
-  - ISCA'26, Raleigh, US, June 28, 2026 (upcoming)
-  - HPCA'26, Sydney, Australia, January 31, 2026 (approximately 30 attendees)
-  - MICRO'25, Seoul, Korea, October 18, 2025 (approximately 50 attendees)
 
 invited_talks:
   - TBD
