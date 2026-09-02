@@ -81,7 +81,6 @@ description: Call for papers for the 1st Workshop on Agile Development and Verif
           <li><strong>Industrial experience reports:</strong> workflows, scale, metrics, lessons learned, failures, and transferable insights from real projects.</li>
           <li><strong>Demonstrations:</strong> live presentations of tools, infrastructure, or open-source projects, describing the demonstration, its dependencies, and availability.</li>
         </ul>
-        <p class="notice">Submission portal, paper length, and formatting requirements will be announced when the call opens.</p>
         <a class="button" href="{{ workshop.submission_link }}">Submit</a>
       </section>
     </div>
